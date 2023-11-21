@@ -1,7 +1,9 @@
+from typing import TypedDict, Any
+
 from constants import ___
 
 
-def calculate_total_spent_for_user(user: ___) -> ___:
+def calculate_total_spent_for_user(user: TypedDict[str, str | int | list[int]]) -> int:
     # попробуй тут воспользовать typing.TypedDict
     pass
 
