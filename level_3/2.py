@@ -3,7 +3,13 @@ from typing import TypedDict, Any
 from constants import ___
 
 
-def calculate_total_spent_for_user(user: TypedDict[str, str | int | list[int]]) -> int:
+class User(TypedDict):
+    name: str
+    age: int
+    transactions_sums: list[int]
+
+
+def calculate_total_spent_for_user(user: User) -> int:
     # попробуй тут воспользовать typing.TypedDict
     pass
 
